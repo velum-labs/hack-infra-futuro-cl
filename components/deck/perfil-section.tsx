@@ -40,7 +40,7 @@ export function PerfilSection() {
             {ideales.map((item, i) => (
               <li
                 key={item}
-                className="flex gap-4 text-sm leading-relaxed text-foreground/80"
+                className="flex gap-4 text-base leading-relaxed text-foreground/80"
               >
                 <span className="font-mono text-xs text-primary">
                   {String(i + 1).padStart(2, '0')}
@@ -60,7 +60,7 @@ export function PerfilSection() {
                 <span className="font-mono text-sm font-bold lowercase tracking-tight text-card-foreground">
                   {b.title}
                 </span>
-                <span className="text-pretty text-sm leading-relaxed text-muted-foreground">
+                <span className="text-pretty text-base leading-relaxed text-muted-foreground">
                   {b.blurb}
                 </span>
               </li>

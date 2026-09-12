@@ -1,4 +1,5 @@
 import { Section, Tag } from '@/components/brand/section'
+import { Caret } from '@/components/brand/hacker'
 
 const stats = [
   { value: '7-8 nov', label: '2026' },
@@ -48,11 +49,15 @@ export function EventoSection() {
             <span className="font-mono text-xs text-primary">
               {String(i + 1).padStart(2, '0')}
             </span>
-            <p className="text-pretty text-sm leading-relaxed text-foreground/80">
+            <p className="text-pretty text-base leading-relaxed text-foreground/80">
               {f}
             </p>
           </li>
         ))}
+        <li className="flex items-center gap-2 bg-card p-5 font-mono text-xs lowercase tracking-wider text-muted-foreground">
+          agenda completa por anunciar
+          <Caret />
+        </li>
       </ul>
 
       <div className="mt-6 flex flex-wrap items-center gap-x-6 gap-y-2">

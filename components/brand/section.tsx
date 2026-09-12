@@ -19,10 +19,10 @@ export function Section({
   return (
     <section
       id={id}
-      className={cn('scroll-mt-20 border-t border-border py-16 md:py-24', className)}
+      className={cn('scroll-mt-20 border-t border-border py-14 md:py-20', className)}
     >
       <div className="mx-auto max-w-6xl px-6">
-        <header className="mb-10 flex flex-col gap-4 md:mb-14">
+        <header className="mb-8 flex flex-col gap-4 md:mb-10">
           <div className="flex items-center gap-3 font-mono text-xs lowercase tracking-widest text-muted-foreground">
             <span className="text-primary">{index}</span>
             <span className="h-px w-8 bg-border" aria-hidden="true" />
@@ -38,7 +38,7 @@ export function Section({
             {title}
           </h2>
           {description ? (
-            <p className="max-w-2xl text-pretty leading-relaxed text-muted-foreground">
+            <p className="max-w-2xl text-pretty text-lg leading-relaxed text-muted-foreground">
               {description}
             </p>
           ) : null}

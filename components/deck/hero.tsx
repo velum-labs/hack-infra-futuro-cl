@@ -2,6 +2,13 @@ import Image from 'next/image'
 import { Mark } from '@/components/brand/logo'
 import { Caret, Kbd, Grain } from '@/components/brand/hacker'
 
+const meta = [
+  { label: 'fecha', value: '7-8 nov 2026', accent: false },
+  { label: 'duración', value: '24 horas', accent: false },
+  { label: 'participantes', value: '~500', accent: false },
+  { label: 'status', value: 'buscando sponsors', accent: true },
+]
+
 export function Hero() {
   return (
     <section
@@ -57,7 +64,7 @@ export function Hero() {
           <Caret className="h-[0.9em] w-[0.5ch]" />
         </h1>
 
-        <p className="mt-6 max-w-2xl text-pretty text-lg leading-relaxed text-foreground/80">
+        <p className="mt-6 max-w-2xl text-pretty text-lg leading-relaxed text-foreground/80 md:text-xl">
           un hackathon para crear agentes de ia, modernizar industrias y construir las
           herramientas que harán posible lo que viene. 24 horas, equipos seleccionados,
           convocatoria a chile y latinoamérica.
@@ -71,27 +78,34 @@ export function Hero() {
           aria-hidden="true"
           style={{
             background:
-              'linear-gradient(to top, color-mix(in oklab, #17161d 80%, transparent), transparent)',
+              'linear-gradient(to top, color-mix(in oklab, #17161d 94%, transparent) 0%, color-mix(in oklab, #17161d 72%, transparent) 55%, transparent 100%)',
           }}
         />
-        <div className="relative mx-auto w-full max-w-6xl px-6 pb-8 pt-24">
-          <div className="flex flex-wrap items-center gap-x-6 gap-y-3 font-mono text-xs lowercase tracking-wider text-[#f4f3ef]/70">
-            <span>
-              fecha <span className="text-[#f4f3ef]">7-8 nov 2026</span>
-            </span>
-            <span>
-              duración <span className="text-[#f4f3ef]">24h</span>
-            </span>
-            <span>
-              meta <span className="text-[#f4f3ef]">~500 participantes</span>
-            </span>
-            <span>
-              status <span className="text-[#b3a4ff]">buscando sponsors</span>
-            </span>
+        <div className="relative mx-auto w-full max-w-6xl px-6 pb-10 pt-28">
+          <div className="grid grid-cols-2 gap-px overflow-hidden rounded-md border border-[#f4f3ef]/25 bg-[#f4f3ef]/25 md:grid-cols-4">
+            {meta.map((m) => (
+              <div
+                key={m.label}
+                className="flex flex-col gap-1.5 bg-[#17161d]/85 px-5 py-4 backdrop-blur-sm"
+              >
+                <span className="font-mono text-[11px] lowercase tracking-widest text-[#b3a4ff]">
+                  {m.label}
+                </span>
+                <span
+                  className={
+                    m.accent
+                      ? 'font-mono text-lg font-bold lowercase leading-tight tracking-tight text-[#b3a4ff]'
+                      : 'font-mono text-2xl font-bold lowercase leading-tight tracking-tight text-[#f4f3ef] md:text-3xl'
+                  }
+                >
+                  {m.value}
+                </span>
+              </div>
+            ))}
           </div>
 
-          <div className="mt-6 flex flex-wrap items-center gap-4 font-mono text-xs lowercase tracking-wider text-[#f4f3ef]/70">
-            <span className="rounded-sm border border-[#f4f3ef]/25 px-3 py-2">
+          <div className="mt-5 flex flex-wrap items-center gap-4 font-mono text-xs lowercase tracking-wider text-[#f4f3ef]/80">
+            <span className="rounded-sm border border-[#f4f3ef]/30 px-3 py-2">
               gobierno <span className="text-[#b3a4ff]">·</span> empresa{' '}
               <span className="text-[#b3a4ff]">·</span> infraestructura de agentes
             </span>

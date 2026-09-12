@@ -63,7 +63,7 @@ export function SponsorSection() {
       description="distintos niveles de sponsorship, según el nivel de participación que busques."
     >
       {/* the statement: ink panel, single violet number */}
-      <div className="relative overflow-hidden rounded-md bg-accent p-8 md:p-12">
+      <div className="relative overflow-hidden rounded-md bg-accent p-8 md:p-10">
         <div
           className="absolute inset-0 grid-blueprint opacity-[0.07]"
           aria-hidden="true"
@@ -79,6 +79,13 @@ export function SponsorSection() {
             <span className="text-primary">150 ingenieros</span> construyendo sobre tu
             tecnología durante 24 horas seguidas.
           </p>
+          <div className="mt-6 flex flex-wrap items-center gap-x-5 gap-y-2 font-mono text-xs lowercase tracking-wider text-accent-foreground/60">
+            <span>equipos seleccionados</span>
+            <span className="text-primary" aria-hidden="true">·</span>
+            <span>jurado técnico</span>
+            <span className="text-primary" aria-hidden="true">·</span>
+            <span>demos y prototipos reales</span>
+          </div>
         </div>
       </div>
 
@@ -129,7 +136,7 @@ export function SponsorSection() {
                 </h4>
                 {t.featured ? <Tag variant="primary">recomendado</Tag> : null}
               </div>
-              <p className="text-pretty text-sm leading-relaxed text-muted-foreground">
+              <p className="text-pretty text-base leading-relaxed text-muted-foreground">
                 {t.blurb}
               </p>
             </article>
@@ -144,7 +151,7 @@ export function SponsorSection() {
           {included.map((item) => (
             <li
               key={item}
-              className="flex gap-3 text-sm leading-relaxed text-foreground/80"
+              className="flex gap-3 text-base leading-relaxed text-foreground/80"
             >
               <span className="mt-0.5 font-mono text-xs text-primary" aria-hidden="true">
                 +

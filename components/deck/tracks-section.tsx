@@ -49,7 +49,7 @@ export function TracksSection() {
             <h3 className="font-mono text-lg font-bold lowercase tracking-tight text-card-foreground">
               {t.name}
             </h3>
-            <p className="text-pretty text-sm leading-relaxed text-muted-foreground">
+            <p className="text-pretty text-base leading-relaxed text-muted-foreground">
               {t.blurb}
             </p>
             <div className="mt-auto border-t border-border pt-4">
