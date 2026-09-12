@@ -44,7 +44,7 @@ export function Hero() {
         </div>
 
         <h1 className="mt-10 max-w-4xl font-mono text-4xl font-bold lowercase leading-[1.05] tracking-tight text-balance md:text-6xl">
-          <span className="text-primary">hack-infra-futuro CL:</span>{' '}
+          <span className="text-primary">hack-infra-futuro:</span>{' '}
           el futuro se{' '}
           <span className="bg-primary px-2 text-primary-foreground">construye</span> desde
           latinoamérica
