@@ -1,5 +1,4 @@
 import Image from 'next/image'
-import { Mark } from '@/components/brand/logo'
 import { Caret, Kbd, Grain } from '@/components/brand/hacker'
 
 const meta = [
@@ -44,20 +43,7 @@ export function Hero() {
           <span>-33.45, -70.66</span>
         </div>
 
-        <div className="mt-10 flex items-center gap-2 font-mono text-xs lowercase tracking-wider text-muted-foreground">
-          <span>hif init hack-infra-futuro --deck=sponsors</span>
-          <Caret />
-        </div>
-
-        <div className="mt-8 flex items-center gap-4">
-          <Mark className="h-14 w-14 md:h-20 md:w-20" />
-          <div className="font-mono text-xs lowercase leading-relaxed tracking-widest text-muted-foreground">
-            <div>hackathon presencial de ia e infraestructura</div>
-            <div className="text-foreground">hack infra futuro · edición 01</div>
-          </div>
-        </div>
-
-        <h1 className="mt-8 max-w-4xl font-mono text-4xl font-bold lowercase leading-[1.05] tracking-tight text-balance md:text-6xl">
+        <h1 className="mt-10 max-w-4xl font-mono text-4xl font-bold lowercase leading-[1.05] tracking-tight text-balance md:text-6xl">
           el futuro se{' '}
           <span className="bg-primary px-2 text-primary-foreground">construye</span> desde
           latinoamérica

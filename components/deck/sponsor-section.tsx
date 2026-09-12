@@ -4,27 +4,22 @@ import { Caret } from '@/components/brand/hacker'
 const benefits = [
   {
     flag: '--talento',
-    title: 'acceso a talento',
     blurb: 'conexión directa con desarrolladores previamente seleccionados.',
   },
   {
     flag: '--producto',
-    title: 'uso de producto',
     blurb: 'tus herramientas puestas a prueba por equipos reales.',
   },
   {
     flag: '--marca',
-    title: 'posicionamiento de marca',
     blurb: 'tu nombre junto a los equipos que realmente construyen.',
   },
   {
     flag: '--pipeline',
-    title: 'pipeline de reclutamiento',
     blurb: 'conócelos antes de que todos quieran contratarlos.',
   },
   {
     flag: '--casos',
-    title: 'casos de éxito',
     blurb: 'proyectos reales construidos con tu tecnología.',
   },
 ]
@@ -93,13 +88,10 @@ export function SponsorSection() {
       <div className="mt-10 grid gap-px overflow-hidden rounded-md border border-border bg-border md:grid-cols-2 lg:grid-cols-3">
         {benefits.map((b) => (
           <div key={b.flag} className="flex flex-col gap-2 bg-card p-6">
-            <span className="font-mono text-xs lowercase tracking-wider text-primary">
+            <h3 className="font-mono text-base font-bold lowercase tracking-wider text-primary">
               {b.flag}
-            </span>
-            <h3 className="font-mono text-base font-bold lowercase tracking-tight text-card-foreground">
-              {b.title}
             </h3>
-            <p className="text-pretty text-sm leading-relaxed text-muted-foreground">
+            <p className="text-pretty text-base leading-relaxed text-muted-foreground">
               {b.blurb}
             </p>
           </div>

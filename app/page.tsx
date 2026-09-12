@@ -8,7 +8,6 @@ import { SponsorSection } from '@/components/deck/sponsor-section'
 import { PerfilSection } from '@/components/deck/perfil-section'
 import { ContactoSection } from '@/components/deck/contacto-section'
 import { Footer } from '@/components/deck/footer'
-import { StatusBar } from '@/components/brand/hacker'
 
 export default function Page() {
   return (
@@ -25,7 +24,6 @@ export default function Page() {
         <ContactoSection />
       </main>
       <Footer />
-      <StatusBar />
     </div>
   )
 }
