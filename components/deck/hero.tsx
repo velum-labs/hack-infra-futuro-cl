@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import { Caret, Kbd, Grain } from '@/components/brand/hacker'
+import { Caret, Grain } from '@/components/brand/hacker'
 
 const meta = [
   { label: 'fecha', value: '7-8 nov 2026', accent: false },
@@ -94,9 +94,6 @@ export function Hero() {
             <span className="rounded-sm border border-[#f4f3ef]/30 px-3 py-2">
               gobierno <span className="text-[#b3a4ff]">·</span> empresa{' '}
               <span className="text-[#b3a4ff]">·</span> infraestructura de agentes
-            </span>
-            <span className="flex items-center gap-1.5">
-              <Kbd className="border-[#f4f3ef]/30 bg-[#f4f3ef]/10 text-[#f4f3ef]">↵</Kbd> ver deck
             </span>
           </div>
         </div>
